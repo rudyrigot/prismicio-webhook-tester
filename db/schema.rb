@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140616215629) do
+ActiveRecord::Schema.define(version: 20140616223355) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "calls", force: true do |t|
     t.datetime "date"
-    t.string   "type"
+    t.string   "type_webhook"
     t.string   "domain"
     t.string   "apiURL"
     t.string   "secret"

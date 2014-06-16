@@ -69,6 +69,6 @@ class CallsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def call_params
-      params.require(:call).permit(:date, :type, :domain, :apiURL, :secret)
+      params.require(:call).permit(:date, :type_webhook, :domain, :apiURL, :secret)
     end
 end

@@ -1,4 +1,8 @@
 PrismicioWebhookTester::Application.routes.draw do
+  match 'webhook', to: 'welcome#webhook', via: :post
+
+  root 'welcome#index'
+
   resources :calls
 
   # The priority is based upon order of creation: first created -> highest priority.
