@@ -21,7 +21,7 @@
         <td><%= call.type_webhook %></td>
         <td><%= call.domain %></td>
         <td><%= call.apiURL %></td>
-        <td><%= call.secret %></td>
+        <td><%= call.obfuscated_secret %></td>
         <td><%= link_to 'Show', call %></td>
         <td><%= link_to 'Edit', edit_call_path(call) %></td>
         <td><%= link_to 'Destroy', call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
