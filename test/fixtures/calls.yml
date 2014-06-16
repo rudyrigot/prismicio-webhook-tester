@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2014-06-16 14:56:29
+  type: 
+  domain: MyString
+  apiURL: MyString
+  secret: MyString
+
+two:
+  date: 2014-06-16 14:56:29
+  type: 
+  domain: MyString
+  apiURL: MyString
+  secret: MyString

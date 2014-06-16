@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @call.date %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @call.type %>
+</p>
+
+<p>
+  <strong>Domain:</strong>
+  <%= @call.domain %>
+</p>
+
+<p>
+  <strong>Apiurl:</strong>
+  <%= @call.apiURL %>
+</p>
+
+<p>
+  <strong>Secret:</strong>
+  <%= @call.secret %>
+</p>
+
+<%= link_to 'Edit', edit_call_path(@call) %> |
+<%= link_to 'Back', calls_path %>

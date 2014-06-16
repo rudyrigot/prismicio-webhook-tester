@@ -1,0 +1,35 @@
+<h1>Listing calls</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Type</th>
+      <th>Domain</th>
+      <th>Apiurl</th>
+      <th>Secret</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @calls.each do |call| %>
+      <tr>
+        <td><%= call.date %></td>
+        <td><%= call.type %></td>
+        <td><%= call.domain %></td>
+        <td><%= call.apiURL %></td>
+        <td><%= call.secret %></td>
+        <td><%= link_to 'Show', call %></td>
+        <td><%= link_to 'Edit', edit_call_path(call) %></td>
+        <td><%= link_to 'Destroy', call, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call', new_call_path %>
